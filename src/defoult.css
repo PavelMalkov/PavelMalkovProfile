@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #F4F9FD;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.top{
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    border-radius: 14px;
+    display: block;
+    position: relative;
+}
+
+.top .icon{
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.top img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    padding: 14px;
+    transform: translateY(-50%); 
+}
+
+.top p{
+    padding: 12px;
+    padding-left: 48px;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+.top .chevron-down{
+    position: absolute;
+    font-size: 12px;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%); 
+}
+
+.nav-back h1{
+    font-size: 22px;
+    height: 30px;
+
+}
+
+.nav-back i{
+    color: #3F8CFF;
+    font-size: 30px;
+    height: 100%;
+    vertical-align: middle;
+}

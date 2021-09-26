@@ -1,0 +1,91 @@
+.box{
+    width: 95vw;
+    padding-bottom: 12px;
+    margin: 12px auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px minmax(240px, 240px) minmax(265px, 265px) minmax(200px, 1fr);
+    grid-template-rows: 48px 48px 48px /* 2fr */ /* minmax(40vh, 60vh) */;
+    gap: 20px 20px;
+    align-items: stretch;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav header header header"
+      "nav about about about"
+      "nav person nav-back nav-back"
+      "nav person nav-about-person content";
+  }
+  
+.header {
+display: grid;
+grid-template-columns: minmax(200px, 300px) 1fr 50px 200px;
+grid-template-rows: 1fr;
+gap: 0px 24px;
+grid-auto-flow: row;
+grid-template-areas:
+    "find . notificationn account";
+grid-area: header;
+}
+  
+.find { grid-area: find; }
+
+.notificationn { grid-area: notificationn; }
+
+.account { grid-area: account; }
+
+.nav {
+    border-radius: 24px;
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+grid-area: about;
+}
+
+.person { grid-area: person;   border-radius: 24px;}
+
+.nav-back { grid-area: nav-back; }
+
+.nav-about-person { grid-area: nav-about-person;   border-radius: 24px;}
+
+.content { grid-area: content;  border-radius: 24px; }
+
+
+html, body , .container {
+height: 100%;
+margin: 0;
+}
+
+/* Просмотр по границам объекта */
+
+/* .container * {
+border: 1px solid red;
+position: relative;
+}
+
+.container *:after {
+content:attr(class);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: grid;
+align-items: center;
+justify-content: center;
+} */
+  
+  
